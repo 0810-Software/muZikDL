@@ -3,7 +3,7 @@ title muZikDL
 if not exist "%appdata%\Marnix0810\MuZikDL\downloadlist.txt" (
 echo no files in download qeue.
 start cmd /c "%~dp0Scripts\add_music_to_the_list.cmd"
-goto bye
+exit
 )
 title muZikDL - Download processor
 md "%~dp0tmp"
@@ -11,6 +11,11 @@ cd /d "%~dp0tmp"
 copy "%appdata%\Marnix0810\MuZikDL\downloadlist.txt" "%~dp0tmp" /y
 del "%appdata%\Marnix0810\MuZikDL\downloadlist.txt"
 cls
+for /r %%F in (downloadlist.txt) do if %%~zF==0 (
+echo no files in download qeue.
+start cmd /c "%~dp0Scripts\add_music_to_the_list.cmd"
+goto bye
+)
 echo list of downloads:
 type downloadlist.txt
 cls
@@ -26,9 +31,9 @@ move /y *.webm "%tmp%\Marnix0810\MuZikDL\output\Video"
 move /y *.mkv "%tmp%\Marnix0810\MuZikDL\output\Video"
 move /y *.mp3 "%tmp%\Marnix0810\MuZikDL\output\Audio"
 del /f /q *.*
-cd /d "%~dp0"
-rd "%~dp0tmp"
 echo done
 start explorer "%tmp%\Marnix0810\MuZikDL\output"
 :bye
+cd /d "%~dp0"
+rd "%~dp0tmp"
 exit
