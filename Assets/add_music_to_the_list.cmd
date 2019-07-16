@@ -1,9 +1,11 @@
 @echo off
 color 97
+cd /d "%~dp0"
+md %appdata%\Marnix0810\MuZikDL\
 echo ENTER MUSIC URLs followed by control+z^&enter on blank line: 
 echo:
-TYPE CON >>"%appdata%\Marnix0810\MuZikDL\downloadlist.txt"
-xcopy "%~dp0..\Scripts\jsort.bat" "%~dp0"
+TYPE CON >> "%appdata%\Marnix0810\MuZikDL\downloadlist.txt"
+xcopy /y "%~dp0..\Scripts\jsort.bat" "%~dp0"
 type "%appdata%\Marnix0810\MuZikDL\downloadlist.txt" > "%~dp0downloadlist.txt"
 call jsort.bat downloadlist.txt /u >downloadlist.txt.new
 del "%~dp0downloadlist.txt"
