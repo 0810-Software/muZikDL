@@ -1,19 +1,19 @@
 @echo off
-if not exist "%~dp0data\downloadlist.txt" (
+if not exist "%appdata%\Marnix0810\MuZikDL\downloadlist.txt" (
 echo no files in download qeue.
 start cmd /c "%~dp0Assets\add_music_to_the_list.cmd"
 goto bye
 )
 md "%~dp0tmp"
 cd /d "%~dp0tmp"
-copy "%~dp0data\downloadlist.txt" "%~dp0tmp" /y
-del "%~dp0data\downloadlist.txt"
+copy "%appdata%\Marnix0810\MuZikDL\downloadlist.txt" "%~dp0tmp" /y
+del "%appdata%\Marnix0810\MuZikDL\downloadlist.txt"
 cls
 echo list of downloads:
 type downloadlist.txt
 cls
 call "%~dp0bin\youtube-dl.exe" --batch-file downloadlist.txt --extract-audio --audio-format mp3 -k || (
-type downloadlist.txt >> "%~dp0data\downloadlist.txt"
+type downloadlist.txt >> "%appdata%\Marnix0810\MuZikDL\downloadlist.txt"
 )
 md "%tmp%\Marnix0810\MuZikDL\output\Audio"
 md "%tmp%\Marnix0810\MuZikDL\output\Video"
