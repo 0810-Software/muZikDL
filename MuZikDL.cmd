@@ -23,8 +23,8 @@ cls
 call "%~dp0bin\youtube-dl.exe" --batch-file downloadlist.txt --extract-audio --audio-format mp3 -k || (
 type downloadlist.txt >> "%appdata%\Marnix0810\MuZikDL\downloadlist.txt"
 set /p "errnum="<"%appdata%\Marnix0810\MuZikDL\downloaderrors.inf"
-set /a errnum+=1
-echo:%errnum%>"%appdata%\Marnix0810\MuZikDL\downloaderrors.inf"
+set /a errnum=1+%errnum%
+echo:%errnum% > "%appdata%\Marnix0810\MuZikDL\downloaderrors.inf"
 )
 if "%errnum%"=="3" (
 del /f /q "%appdata%\Marnix0810\MuZikDL\downloaderrors.inf"
