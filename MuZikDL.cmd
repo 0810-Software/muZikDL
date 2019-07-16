@@ -1,9 +1,11 @@
 @echo off
+title muZikDL
 if not exist "%appdata%\Marnix0810\MuZikDL\downloadlist.txt" (
 echo no files in download qeue.
 start cmd /c "%~dp0Assets\add_music_to_the_list.cmd"
 goto bye
 )
+title muZikDL - Download processor
 md "%~dp0tmp"
 cd /d "%~dp0tmp"
 copy "%appdata%\Marnix0810\MuZikDL\downloadlist.txt" "%~dp0tmp" /y

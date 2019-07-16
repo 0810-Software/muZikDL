@@ -1,4 +1,5 @@
 @echo off
+title muZikDL - Add music to the download list
 color 97
 cd /d "%~dp0"
 md %appdata%\Marnix0810\MuZikDL\
