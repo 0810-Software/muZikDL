@@ -12,6 +12,7 @@ copy "%appdata%\Marnix0810\MuZikDL\downloadlist.txt" "%~dp0tmp" /y
 del "%appdata%\Marnix0810\MuZikDL\downloadlist.txt"
 cls
 for /r %%F in (downloadlist.txt) do if %%~zF==0 (
+del /f /q downloadlist.txt
 echo no files in download qeue.
 start cmd /c "%~dp0Scripts\add_music_to_the_list.cmd"
 goto bye
