@@ -21,16 +21,10 @@ echo list of downloads:
 type downloadlist.txt
 cls
 call "%~dp0bin\youtube-dl.exe" --batch-file downloadlist.txt --extract-audio --audio-format mp3 -k || (
-type downloadlist.txt >> "%appdata%\Marnix0810\MuZikDL\downloadlist.txt"
-set /p "errnum="<"%appdata%\Marnix0810\MuZikDL\downloaderrors.inf"
-set /a errnum=1+%errnum%
-echo:%errnum% > "%appdata%\Marnix0810\MuZikDL\downloaderrors.inf"
-)
-if "%errnum%"=="3" (
-del /f /q "%appdata%\Marnix0810\MuZikDL\downloaderrors.inf"
-del /f /q "%appdata%\Marnix0810\MuZikDL\downloadlist.txt"
-echo resetted download list after 3 errors.
+cls
+echo there has been an error downloading this list. You can try to add the items to the list and download again.
 pause
+exit
 )
 md "%tmp%\Marnix0810\MuZikDL\output\Audio"
 md "%tmp%\Marnix0810\MuZikDL\output\Video"
