@@ -3,10 +3,10 @@
 Path=%userprofile%\AppData\Local\Programs\Marnix0810\muZikDL\
 SavePath
 Overwrite=1
-Title=muZikDL version 0.0.1.4 installation
+Title=muZikDL version 0.0.1.5 installation
 Text
 {
-<h1>muZikDL version 0.0.1.4 installation</h1>
+<h1>muZikDL version 0.0.1.5 installation</h1>
 MuZikDL is not in a full consumer-ready phase yet. It will not be not as nice and polite to you as I would wish it to be.
 
 <b>Do you want to install muZikDL?</b>
