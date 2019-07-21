@@ -1,18 +1,15 @@
 ;because this script contains the installed version (multiple times), you need to change it for every release.
-
+Setup=postinstall.cmd
 Path=%userprofile%\AppData\Local\Programs\Marnix0810\muZikDL\
 SavePath
 Overwrite=1
-Title=muZikDL version 0.0.1.5 installation
+Title=muZikDL version 0.0.1.6 installation
 Text
 {
-<h1>muZikDL version 0.0.1.5 installation</h1>
+<h1>muZikDL version 0.0.1.6 installation</h1>
 MuZikDL is not in a full consumer-ready phase yet. It will not be not as nice and polite to you as I would wish it to be.
 
-<b>Do you want to install muZikDL?</b>
-
-<h2>Before use</h2>
-before use you need to install <a href="https://www.microsoft.com/en-US/download/details.aspx?id=5555" target="_blank">Microsoft Visual C++ 2010 Redistributable Package</a> for youtube-dl.exe.
+<b>Do you want to install muZikDL?</b> Microsoft Visual C++ 2010 Redistributable Package will automatically be installed with it.
 
 }
 License=License agreement
