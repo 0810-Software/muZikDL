@@ -1,3 +1,9 @@
+:: If you see this file in your browser instead of downloading it, just use control+s on this page to force a download.
+
+
+
+
+
 @echo off
 echo Welcome! Preparing setup script...
 title MuZikDL Online Installation Script
