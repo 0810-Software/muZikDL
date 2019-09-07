@@ -26,6 +26,8 @@ echo there has been an error downloading this list. You can try to add the items
 pause
 exit
 )
+del "%tmp%\Marnix0810\MuZikDL\output\*" /S /Q
+rd /S /Q "%tmp%\Marnix0810\MuZikDL\output\"
 md "%tmp%\Marnix0810\MuZikDL\output\Audio"
 md "%tmp%\Marnix0810\MuZikDL\output\Video"
 del /f /q downloadlist.txt
