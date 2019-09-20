@@ -1,5 +1,5 @@
 ---
-title: muZikDL - Home
+title: Home
 ---
 
 ## The Youtube download application that works
