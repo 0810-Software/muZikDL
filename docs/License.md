@@ -1,3 +1,10 @@
+---
+title: muZikDL license
+permalink: /License.html
+---
+
+
+
 BSD 2-Clause License
 
 Copyright (c) 2019, Marnix Bloeiman
