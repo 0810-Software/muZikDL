@@ -5,6 +5,21 @@
 
 
 @echo off
+color f0
+title NOTE
+echo NOTE:
+echo:
+echo ========================================================
+echo:
+echo MuZikDL is not in a full consumer-ready phase yet (but I am coming up with stuff that might change that soon enough!). It will not (yet) be as nice and polite to you as I would wish it to be.
+echo:
+echo:
+echo remember you are installing a beta version of muZikDL.
+echo The outcome might not be as good as expected.
+echo:
+echo ========================================================
+pause
+
 echo Welcome! Preparing setup script...
 title MuZikDL Online Installation Script
 set randtmp=%temp%\M0810SetupTemp\%random%\
@@ -42,12 +57,12 @@ cls
 echo Cleaning up installer files...
 del /q /s "%randtmp%*"
 del /q /s "%appdir%\bin\Installer-only\*"
+del /q /s "%appdir%\%~nx0"
+del /q /s "%appdir%\docs\*"
 cd "%~dp0"
+rd /s /q "%appdir%\docs"
 rd /s /q "%appdir%\bin\Installer-only\"
 rd /s /q "%randtmp%"
-del /q /s "%appdir%\%~nx0"
-
-
 cls
 Echo the installation of MuZikDL is finished.
 start /min "" "https://marnix0810.github.io/muZikDL/License"
