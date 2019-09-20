@@ -2,7 +2,7 @@
 ## The youtube download application that works
 *Currently in beta.*
 
-<a href="marnix0810.github.io/muZikDL/get">Get it now</a>
+<a href="https://marnix0810.github.io/muZikDL/get">Get it now</a>
 
 ### In just tree steps
 
@@ -12,7 +12,7 @@
 
 <center>
 <h3>I want this.</h3>
-<button><a href="marnix0810.github.io/muZikDL/get">Get MuZikDL</a></button>
+<button><a href="https://marnix0810.github.io/muZikDL/get">Get MuZikDL</a></button>
 </center>
 
 <h2 style="color:#a30003;">Warning</h2>
