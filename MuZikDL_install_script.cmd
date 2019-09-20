@@ -9,15 +9,17 @@ color f0
 title NOTE
 echo NOTE:
 echo:
-echo ========================================================
+echo ============================================================================
 echo:
-echo MuZikDL is not in a full consumer-ready phase yet (but I am coming up with stuff that might change that soon enough!). It will not (yet) be as nice and polite to you as I would wish it to be.
+echo MuZikDL is not in a full consumer-ready phase yet
+echo (but I am coming up with stuff that might change that soon enough!).
+echo It will not (yet) be as nice and polite to you as I would wish it to be.
 echo:
 echo:
 echo remember you are installing a beta version of muZikDL.
 echo The outcome might not be as good as expected.
 echo:
-echo ========================================================
+echo ============================================================================
 pause
 
 echo Welcome! Preparing setup script...
