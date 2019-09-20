@@ -1,6 +1,7 @@
 # muZikDL
 ## The youtube download application that works
-*Currently in beta*
+*Currently in beta.*
+
 <a href="marnix0810.github.io/muZikDL/get">Get it now</a>
 
 ### In just tree steps
@@ -15,7 +16,6 @@
 </center>
 
 <h2 style="color:#a30003;">Warning</h2>
-
 <p style="color:#a60003;">
 Some videos or clips are protected by laws and copyright, MuZikDL won&#8217;t block you from downloading them, but you should know that it is breaking the law.
 </p>
