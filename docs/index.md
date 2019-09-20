@@ -1,4 +1,3 @@
-# muZikDL
 ## The youtube download application that works
 *Currently in beta.*
 
