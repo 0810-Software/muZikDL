@@ -1,10 +1,9 @@
 ---
 layout: page
 title: muZikDL - Home
-permalink: /
 ---
 
-## The youtube download application that works
+## The Youtube download application that works
 
 *Currently in beta.*
 
