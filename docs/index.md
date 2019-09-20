@@ -1,6 +1,7 @@
 ---
 layout: page
 title: muZikDL - Home
+permalink: /
 ---
 
 ## The youtube download application that works
