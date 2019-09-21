@@ -8,3 +8,5 @@ Stable releases will be made available trough Github Releases. For now, muZikDL 
 
 You can [sign up for watching](https://github.com/Marnix0810/muZikDL/watchers) to get a mail when the first stable release is rolled out.
 
+<hr><A href="https://marnix0810.wordpress.com">back to The Marnix 0810 Site</A>
+

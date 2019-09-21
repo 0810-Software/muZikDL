@@ -24,3 +24,4 @@ title: Home
 Some videos or clips are protected by laws and copyright, MuZikDL won&#8217;t block you from downloading them, but you should know that it is breaking the law.
 </p>
 
+<hr><A href="https://marnix0810.wordpress.com">back to The Marnix 0810 Site</A>
