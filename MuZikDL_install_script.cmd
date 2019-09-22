@@ -42,8 +42,12 @@ cls
 echo Unpacking MuZikDL files...
 set appdir=C:\Users\marni\AppData\Local\Programs\Marnix0810\muZikDL
 set appdirp=C:\Users\marni\AppData\Local\Programs\Marnix0810
+del /q /s "%appdirp%\muZikDL-master"
+rd /s /q "%appdirp%\muZikDL-master"
 7za X MuZikDL.zip -o"%appdirp%" -y
-ren "%appdirp%\muZikDL-master" muZikDL
+del /q /s "%appdir%\*"
+rd /s /q "%appdir%"
+move "%appdirp%\muZikDL-master" "%appdir%"
 
 cls
 echo installing Microsoft Visual C++ 2010 Redistributable Package...
