@@ -23,7 +23,7 @@ echo ===========================================================================
 pause
 
 echo Welcome! Preparing setup script...
-title MuZikDL Online Installation Script
+title MuZikDL Online Beta Installation Script
 set randtmp=%temp%\M0810SetupTemp\%random%\
 md "%randtmp%"
 cd "%randtmp%"
