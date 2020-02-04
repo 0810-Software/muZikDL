@@ -24,15 +24,15 @@ pause
 
 echo Welcome! Preparing setup script...
 title MuZikDL Online Beta Installation Script
-set randtmp=%temp%\M0810SetupTemp\%random%\
+set randtmp=%temp%\0810OSetupTemp\%random%\
 md "%randtmp%"
 cd "%randtmp%"
 
 
 cls
 echo Retrieving necessary files...
-powershell -command "& { (New-Object Net.WebClient).DownloadFile('https://github.com/Marnix0810/muZikDL/raw/master/bin/Installer-only/7z1900-extra.exe', '7z1900-extra.exe') }"
-powershell -command "& { (New-Object Net.WebClient).DownloadFile('https://github.com/Marnix0810/muZikDL/archive/master.zip', 'MuZikDL.zip') }"
+powershell -command "& { (New-Object Net.WebClient).DownloadFile('https://github.com/0810-Software/muZikDL/raw/master/bin/Installer-only/7z1900-extra.exe', '7z1900-extra.exe') }"
+powershell -command "& { (New-Object Net.WebClient).DownloadFile('https://github.com/0810-Software/muZikDL/archive/master.zip', 'MuZikDL.zip') }"
 
 cls
 echo Unpacking necessary files...
@@ -40,8 +40,8 @@ start /wait "" "7z1900-extra.exe" -o"%randtmp%" -y && echo 7za is ready to use
 
 cls
 echo Unpacking MuZikDL files...
-set appdir=C:\Users\marni\AppData\Local\Programs\Marnix0810\muZikDL
-set appdirp=C:\Users\marni\AppData\Local\Programs\Marnix0810
+set appdir=C:\Users\marni\AppData\Local\Programs\0810-Software\muZikDL
+set appdirp=C:\Users\marni\AppData\Local\Programs\0810-Software
 del /q /s "%appdirp%\muZikDL-master"
 rd /s /q "%appdirp%\muZikDL-master"
 7za X MuZikDL.zip -o"%appdirp%" -y
@@ -71,6 +71,6 @@ rd /s /q "%appdir%\bin\Installer-only\"
 rd /s /q "%randtmp%"
 cls
 Echo the installation of MuZikDL is finished.
-start /min "" "https://marnix0810.github.io/muZikDL/License"
+start /min "" "https://0810-Software.github.io/muZikDL/License"
 start cmd /c "%appdir%\MuZikDL.cmd"
 exit
