@@ -55,7 +55,6 @@ start /wait "" "%appdir%\bin\Installer-only\vcredist_x86.exe" /install /quiet
 
 cls
 echo Creating shortcuts...
-powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%HOMEDRIVE%\Users\Public\Desktop\MuZikDL.lnk');$s.TargetPath='%appdir%\MuZikDL.cmd';$s.Save()"
 powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%appdata%\Microsoft\Windows\Start Menu\Programs\MuZikDL.lnk');$s.TargetPath='%appdir%\MuZikDL.cmd';$s.Save()"
 setx path "%PATH%;%appdir%"
 
