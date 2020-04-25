@@ -1,9 +1,11 @@
 [package]
 name = "muZikDL"
-version = "0.1.0"
+version = "0.0.0"
 authors = ["Marnix0810 <programmer.marxin0810@gmail.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+youtube_dl = "0.4.0"
+ffmpeg = "0.1.1"
