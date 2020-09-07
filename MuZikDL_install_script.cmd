@@ -50,9 +50,11 @@ rd /s /q "%appdir%"
 move "%appdirp%\muZikDL-master" "%appdir%"
 
 cls
+choice /m "Do you want to install the Microsoft Visual C++ 2010 Redistributable Package? It is necessary for muZikDL to run on some computers, bt will require admin priviliges to install."
+if "%errorlevel%"=="2" goto skipVCredist
 echo installing Microsoft Visual C++ 2010 Redistributable Package...
 start /wait "" "%appdir%\bin\Installer-only\vcredist_x86.exe" /install /quiet
-
+:skipVCredist
 cls
 echo Creating shortcuts...
 powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%appdata%\Microsoft\Windows\Start Menu\Programs\MuZikDL.lnk');$s.TargetPath='%appdir%\MuZikDL.cmd';$s.Save()"
@@ -70,6 +72,6 @@ rd /s /q "%appdir%\bin\Installer-only\"
 rd /s /q "%randtmp%"
 cls
 Echo the installation of MuZikDL is finished.
-start /min "" "https://0810-Software.github.io/muZikDL/License"
+start /min "" "https://Marnix0810.github.io/muZikDL/License"
 start cmd /c "%appdir%\MuZikDL.cmd"
 exit
