@@ -6,6 +6,10 @@ title: Home
 
 *Currently in beta.*
 
+
+<p style="color:#a60003;">
+  *The muZikDL project has ended now that the Youtbe-DL repository has been taken down.*
+</p>
 <a href="https://marnix0810.github.io/muZikDL/get">Get it now</a>
 
 ### In just tree steps
