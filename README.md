@@ -1,6 +1,9 @@
 # muZikDL
 _Youtube downloader using the Youtube-dl Windows exe._
 *Currently in beta*
+## NOTE #2:
+**The muZikDL project has ended now that the Youtbe-DL repository has been taken down. If muZikDL ever comes back up again, this repository won't be the one holding it.**
+
 ## NOTE:
 MuZikDL is not in a full consumer-ready phase yet (but I am coming up with stuff that might change that soon enough!). It will not (yet) be as nice and polite to you as I would wish it to be.
 
